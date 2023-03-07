@@ -1,0 +1,55 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Responsive HTML Admin Dashboard Template based on Bootstrap 5">
+    <meta name="author" content="NobleUI">
+    <meta name="keywords"
+        content="nobleui, noble ui, bootstrap, bootstrap 5, bootstrap5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, ui kit, web, nobleuihtml">
+
+    <title>hhihihih</title>
+
+    <!-- Styles -->
+    {% include "layout/styles.html" %}
+   
+    <!-- @yield('styles') -->
+</head>
+
+<body>
+    <div class="main-wrapper">
+        <!-- sidebar  -->
+        {% include "layout/sidebar.html" %}
+      
+       <!-- End sidebar -->
+
+        <div class="page-wrapper">
+            <!--  header -->
+            {% include "layout/header.html" %}
+           
+            <!-- End header  -->
+
+            <div class="page-content">
+                <!-- content  -->
+                {% block content %}
+                 {% endblock content %}
+                <!-- End content  -->
+            </div>
+            <!-- footer  -->
+            {% include "layout/footer.html" %}
+            <!-- End footer  -->
+        </div>
+    </div>
+
+    <!-- Scripts -->
+  
+    {% include "layout/scripts.html" %}
+ 
+
+</body>
+
+</html>
